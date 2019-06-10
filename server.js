@@ -1,7 +1,7 @@
 require("regenerator-runtime/runtime");
 const Koa = require('koa');
 const { renderToNodeStream } = require('react-dom/server');
-const isDev = process.env.NODE_ENV === 'development'
+const isDev = process.env.NODE_ENV === 'development';
 global.window = {};
 
 const app = new Koa();
